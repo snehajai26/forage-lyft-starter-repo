@@ -16,7 +16,7 @@ class CarFactory:
     def create_glissade(current_date, last_service_date, current_mileage, last_service_mileage, tires_array):
         engine = WilloughbyEngine(current_mileage, last_service_mileage)        
         battery = SpindlerBattery(current_date, last_service_date)
-        tires = CarriganTires(tires_array)
+        tires = OctoprimeTires(tires_array)
         car = Car(engine, battery, tires)
         return car
     
@@ -32,7 +32,7 @@ class CarFactory:
     def create_rorschach(current_date, last_service_date, current_mileage, last_service_mileage, tires_array):
         engine = WilloughbyEngine(current_mileage, last_service_mileage)        
         battery = NubbinBattery(current_date, last_service_date)
-        tires = CarriganTires(tires_array)
+        tires = OctoprimeTires(tires_array)
         car = Car(engine, battery, tires)
         return car
     
